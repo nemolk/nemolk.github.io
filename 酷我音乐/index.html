@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酷我</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="https://unpkg.com/layui@2.6.8/dist/css/layui.css">
+    <!-- 引入 layui.js -->
+    <script src="https://unpkg.com/layui@2.6.8/dist/layui.js"></script>
+    <script src="https://static/build/layui.js"></script>
+</head>
+
+<body>
+    <!-- 头部导航条 -->
+    <div class="header">
+        <div class="headerNav">
+            <div class="headerNav-left">
+                <a href="javascript:void(0)">
+                    <img src="https://h5static.kuwo.cn/www/kw-www/img/logo.dac7499.png" alt="">
+                </a>
+                <ul class="NavUL">
+                    <li class="NavUl-item">
+                        <a href="javascript:void(0)">发现音乐</a>
+                    </li>
+                    <li class="NavUl-item">
+                        <a href="javascript:void(0)">下载客户端</a>
+                    </li>
+                    <li class="NavUl-item">
+                        <a href="javascript:void(0)">音乐现场</a>
+                    </li>
+                    <li class="NavUl-item">
+                        <a href="javascript:void(0)">VIP会员</a>
+                    </li>
+                    <li class="NavUl-item">
+                        <a href="javascript:void(0)">酷我畅听</a>
+                    </li>
+                    <li class="NavUl-item">
+                        <a href="javascript:void(0)">酷我耳机</a>
+                    </li>
+                    <li class="NavUln-item navtxt">
+                        <a href="javascript:void(0)" class="sanjiao">更多
+                            <span></span>
+                        </a>
+                        <ul class="sanjiaoTxt">
+                            <li>
+                                <a href="javascript:void(0)">酷我音乐人</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">HiFi音乐</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">酷我视频</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">主播电台</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="headerNav-right">
+                <div class="searchNav">
+                    <i></i>
+                    <input type="text" placeholder="搜索音乐/MV/歌单/歌手">
+                    <div class="searchTxt" style="display: none;">
+                        <p>大家都在搜</p>
+                        <ul id="searchBang">
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #ea4343;color: #fff; text-align: center;line-height: 20px;">1</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #ff6b21;color: #fff; text-align: center;line-height: 20px;">2</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #ffb700;color: #fff; text-align: center;line-height: 20px;">3</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #b3b3b3;color: #fff; text-align: center;line-height: 20px;">4</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #b3b3b3;color: #fff; text-align: center;line-height: 20px;">5</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #b3b3b3;color: #fff; text-align: center;line-height: 20px;">6</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #b3b3b3;color: #fff; text-align: center;line-height: 20px;">7</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #b3b3b3;color: #fff; text-align: center;line-height: 20px;">8</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #b3b3b3;color: #fff; text-align: center;line-height: 20px;">9</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                            <li>
+                                <span
+                                    style="display: inline-block;width: 20px;height: 20px;border-radius: 3px;background-color: #b3b3b3;color: #fff; text-align: center;line-height: 20px;">10</span>
+                                <a href="javascript:void(0)"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="userService">
+                    <a href="javascript:void(0)">登录</a>
+                    <a>/</a>
+                    <a href="javascript:void(0)">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <div class="banner content">
+        <div class="bannerTitle">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="bannerTitleList">推荐</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bannerTitleList">排行榜</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bannerTitleList">歌手</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bannerTitleList">歌单</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bannerTitleList">MV</a>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="bannerContent">
+            <div class="layui-carousel" id="test1">
+                <div carousel-item class="bannerList">
+                    <div>
+                        <img src="" alt="" class="bannerImg">
+                    </div>
+                    <div>
+                        <img src="" alt="" class="bannerImg">
+                    </div>
+                    <div>
+                        <img src="" alt="" class="bannerImg">
+                    </div>
+                    <div>
+                        <img src="" alt="" class="bannerImg">
+                    </div>
+                    <div>
+                        <img src="" alt="" class="bannerImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bannerFooter">
+            <ul>
+                <li>
+                    <span style="display:inline-block;width:28px;height:28px;">
+                        <img src="./imges/windows.png" alt="">
+                    </span>
+                    <a href="">下载PC版</a>
+                </li>
+                <i></i>
+                <li>
+                    <span style="display:inline-block;width:28px;height:28px;">
+                        <img src="./imges/Android.png" alt="">
+                    </span>
+                    <a href="">下载Android版</a>
+                </li>
+                <i></i>
+                <li>
+                    <span style="display:inline-block;width:28px;height:28px;">
+                        <img src="./imges/iPhone.png" alt="">
+                    </span>
+                    <a href="">下载iPhone版</a>
+                </li>
+                <i></i>
+                <li>
+                    <span style="display:inline-block;width:28px;height:28px;">
+                        <img src="./imges/other.png" alt="" style="vertical-align: middle;">
+                    </span>
+                    <a href="">下载其他版本</a>
+                </li>
+            </ul>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- 推荐歌单 -->
+    <div class="tuijian content">
+        <div class="tuijianTitle">
+            <div class="tuijianTitle-left">
+                <h2>推荐歌单</h2>
+                <ul></ul>
+            </div>
+            <div class="tuijianTitle-right">
+                <div class="bannerTitle tuijianTitle-right">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList">每日推荐</a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList tuijianTitle-change"></a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList tuijianTitle-change"></a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList tuijianTitle-change"></a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList tuijianTitle-change"></a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList">更多 ></a>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tuijianContent">
+            <ul>
+                <li>
+                    <div class="tuijianDiv">
+                        <img src="" alt="" class="tuijianImg">
+                        <span></span>
+                    </div>
+                    <p class="tuijianP">
+                        <span></span>
+                    </p>
+                    <p class="tuijianNum">
+                        <i></i>
+                        <span></span>
+                    </p>
+                </li>
+                <li>
+                    <div class="tuijianDiv">
+                        <img src="" alt="" class="tuijianImg">
+                        <span></span>
+                    </div>
+                    <p class="tuijianP">
+                        <span></span>
+                    </p>
+                    <p class="tuijianNum">
+                        <i></i>
+                        <span></span>
+                    </p>
+                </li>
+                <li>
+                    <div class="tuijianDiv">
+                        <img src="" alt="" class="tuijianImg">
+                        <span></span>
+                    </div>
+                    <p class="tuijianP">
+                        <span></span>
+                    </p>
+                    <p class="tuijianNum">
+                        <i></i>
+                        <span></span>
+                    </p>
+                </li>
+                <li>
+                    <div class="tuijianDiv">
+                        <img src="" alt="" class="tuijianImg">
+                        <span></span>
+                    </div>
+                    <p class="tuijianP">
+                        <span></span>
+                    </p>
+                    <p class="tuijianNum">
+                        <i></i>
+                        <span></span>
+                    </p>
+                </li>
+                <li>
+                    <div class="tuijianDiv">
+                        <img src="" alt="" class="tuijianImg">
+                        <span></span>
+                    </div>
+                    <p class="tuijianP">
+                        <span></span>
+                    </p>
+                    <p class="tuijianNum">
+                        <i></i>
+                        <span></span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 精选活动 -->
+    <div class="jingxuan content">
+        <div class="jingxaunTitle">
+            <h2>精选活动</h2>
+        </div>
+        <div class="jingxaunContent">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <!-- 排行榜 -->
+    <div class="paihang content">
+        <div class="paihangTitle">
+            <h2>排行榜</h2>
+            <a href="javascript:void(0)" class="bannerTitleList">更多 ></a>
+        </div>
+        <div class="paihangContent">
+            <ul>
+                <li>
+                    <div>
+                        <img src="https://h5static.kuwo.cn/upload/image/d8faf807ce667092ef29f8d62237bfbf3a1f127a6370664705722a67c8f9e23b.png"
+                            alt="">
+                        <span class="cover"></span>
+                        <i></i>
+                    </div>
+                    <ul class="paihangList">
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_first.df06fb1.png"
+                                style="display: block;" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_secondary.d99e73e.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_third.8abbb65.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>4</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>5</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://h5static.kuwo.cn/upload/image/fb29b783091117318dbb5dac53f8a7deee25b34054f7d00fb91640f6106773c6.png"
+                            alt="">
+                        <span class="cover"></span>
+                        <i></i>
+                    </div>
+                    <ul class="paihangList">
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_first.df06fb1.png"
+                                style="display: block;" alt="">
+                            <span>
+                                <p class=""></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_secondary.d99e73e.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_third.8abbb65.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>4</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>5</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://h5static.kuwo.cn/upload/image/fcd292e95c97704678ae6a77191df0b915dd9b9657296ca20b9f19047f672055.png"
+                            alt="">
+                        <span class="cover"></span>
+                        <i></i>
+                    </div>
+                    <ul class="paihangList">
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_first.df06fb1.png"
+                                style="display: block;" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_secondary.d99e73e.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_third.8abbb65.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>4</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>5</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <div>
+                        <img src="https://h5static.kuwo.cn/upload/image/fcd292e95c97704678ae6a77191df0b915dd9b9657296ca20b9f19047f672055.png"
+                            alt="">
+                        <span class="cover"></span>
+                        <i></i>
+                    </div>
+                    <ul class="paihangList">
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_first.df06fb1.png"
+                                style="display: block;" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_secondary.d99e73e.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_third.8abbb65.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>4</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>5</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://h5static.kuwo.cn/upload/image/838f7519b40479695a6f5a22923704600d2dfceb4e8d6ad0099b5a169ae0df03.png"
+                            alt="">
+                        <span class="cover"></span>
+                        <i></i>
+                    </div>
+                    <ul class="paihangList">
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_first.df06fb1.png"
+                                style="display: block;" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_secondary.d99e73e.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="https://h5static.kuwo.cn/www/kw-www/img/icon_third.8abbb65.png" alt="">
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>4</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                        <li>
+                            <b>5</b>
+                            <span>
+                                <p></p>
+                                <a href=""></a>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 歌手推荐 -->
+    <div class="geshou content">
+        <div class="geshouTitle">
+            <div class="tuijianTitle-left">
+                <h2>歌手推荐</h2>
+            </div>
+            <div class="tuijianTitle-right">
+                <div class="bannerTitle tuijianTitle-right">
+                    <ul>
+                        <li class="huayu">
+                            <a href="javascript:void(0)" class="bannerTitleList geshouTitle-change"></a>
+                            <span></span>
+                        </li>
+                        <li class="oumei">
+                            <a href="javascript:void(0)" class="bannerTitleList geshouTitle-change"></a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList geshouTitle-change"></a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList geshouTitle-change"></a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="bannerTitleList">更多 ></a>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="geshouContent">
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <p></p>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p></p>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p></p>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p></p>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p></p>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p></p>
+                    <a href="javascript:void(0)"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 主播电台 -->
+    <div class="zhubo content">
+        <div class="zhuboTitle">
+            <h2>主播电台</h2>
+            <span>
+                <a href="">畅听更多精品电台</a>
+                <img src="./imges/下箭头.png" alt="">
+            </span>
+        </div>
+        <div class="zhuboContent">
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="zhubo-left">
+                    <div class="zhuboCover"></div>
+                    <div class="zhuboPlayer">
+                        <img src="/酷我音乐/imges/playerBig.png" alt="">
+                    </div>
+                </div>
+                <div class="zhubo-right">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footerUp">
+            <div class="footerUp-content">
+                <div>
+                    <p>下载酷我音乐客户端</p>
+                    <ul>
+                        <li>
+                            <img class="gray" src="./imges/pc.png" alt="">
+                            <img class="yellow" src="./imges/pc黄.png" alt="">
+                            <a href="javascript:void(0)">PC版</a>
+                        </li>
+                        <li>
+                            <img class="gray" src="./imges/苹果.png" alt="">
+                            <img class="yellow" src="./imges/苹果黄.png" alt="">
+                            <a href="javascript:void(0)">Android</a>
+                        </li>
+                        <li>
+                            <img class="gray" src="./imges/安卓.png" alt="">
+                            <img class="yellow" src="./imges/安卓黄.png" alt="">
+                            <a href="javascript:void(0)">iPhone版</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>协议与声明</p>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">用户服务协议</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">负责声明</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">用户权限</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">隐私政策&emsp;&nbsp;&nbsp;&nbsp;
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">权力声明</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <p>其他</p>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">腾讯音乐</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">诚聘英才</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">广告服务</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">网上有害信息举报专区</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>合作链接</p>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">QQ音乐</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">酷狗听书</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerDown">
+            <div class="footerDown-content">
+                <p>
+                    北京酷我科技有限公司版权所有 丨 网络文化经营许可证：
+                    <a href="javascript:void(0)">京网文[2015]0525-205号</a>
+                    丨
+                    <a href="javascript:void(0)">信息网络传播视听节目许可证0109362号</a>
+                    丨 增值电信业务经营许可证B2-20090418 丨
+                    <a href="javascript:void(0)">京ICP证060261号</a>
+                </p>
+                <p>
+                    <a href="javascript:void(0)">广播电视节目制作经营许可证京字第2037号</a>
+                    丨
+                    <a href="javascript:void(0)">营业性演出许可证京市演1574</a>
+                    丨
+                    <a href="javascript:void(0)">京公网安备11010502030216号</a>
+                    丨
+                    <a href="javascript:void(0)">京ICP备09014827号</a>
+                </p>
+                <p>
+                    应用版本：9.4.4.0 丨 开发者：北京酷我科技有限公司 丨 举报电话：010-87939949丨 举报邮箱：support@kuwo.cn 丨
+                    <a href="javascript:void(0)">未成年人监督举报入口</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧固定栏 -->
+    <div class="rightFixed">
+        <ul>
+            <li>
+                <a href="javascript:void(0)">反馈</a>
+            </li>
+            <li>
+                <a href="https://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-v-53722a76=""></a>
+                <img class="fixedDown" src="./imges/windows666.png" alt="">
+                <img class="fixedUp" src="./imges/windows蓝.png" alt="">
+            </li>
+            <li>
+                <img class="fixedDown" src="./imges/安卓666.png" alt="">
+                <img class="fixedUp" src="./imges/安卓绿png" alt="">
+            </li>
+            <li>
+                <img class="fixedDown" src="./imges/iphone666.png" alt="">
+                <img class="fixedUp" src="./imges/iphone333.png" alt="">
+            </li>
+            <li class="top">
+                <img class="fixedDown" src="./imges/返回顶部666.png" alt="">
+                <img class="fixedUp" src="./imges/返回顶部333.png" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <!-- 弹出部分 -->
+    <div class="all">
+        <div class="fankui">
+            <div>
+                <a href="javascript:void(0)">意见反馈</a>
+                <img class="guanbi" src="./imges/x号.png" alt="">
+            </div>
+            <div>
+                <div>反馈内容：</div>
+                <div>
+                    <textarea id="up" placeholder="请输入反馈内容，我们会尽快安排解决" class="text text_content"
+                        maxlength="300"></textarea>
+                    <span id="textLength">300</span>
+                </div>
+            </div>
+            <div>
+                <div>联系方式：</div>
+                <div>
+                    <textarea placeholder="请输入电话、QQ或邮箱，仅工作人员可见" class="text text_content"></textarea>
+                </div>
+            </div>
+            <div>提交</div>
+        </div>
+        <div class="anzhuo">
+            <div>
+                <a href="javascript:void(0)">酷我音乐Android最新版</a>
+                <img class="guanbi" src="./imges/x号.png" alt="">
+            </div>
+            <div>
+                <div>
+                    <img src="./imges/下载.png" alt="">
+                    下载安装包
+                </div>
+                <div>
+                    <img src="https://h5static.kuwo.cn/www/kw-www/img/qrcode.d53daff.png" alt="">
+                    <p>扫描二维码下载</p>
+                </div>
+            </div>
+        </div>
+        <div class="apple">
+            <div>
+                <a href="javascript:void(0)">酷我音乐iPhone最新版</a>
+                <img class="guanbi" src="./imges/x号.png" alt="">
+            </div>
+            <div>
+                <div>
+                    <img src="./imges/下载.png" alt="">
+                    去Appstore下载
+                </div>
+                <div>
+                    <img src="https://h5static.kuwo.cn/www/kw-www/img/qrcode.d53daff.png" alt="">
+                    <p>扫描二维码下载</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 播放部分 -->
+    <div class="player">
+        <div class="playerContent">
+            <div class="playerUp">
+                <img src="./imges/开锁.png" alt="" class="suoKai">
+                <img src="./imges/关锁.png" alt="" class="suoGuan">
+            </div>
+            <div class="playerDown">
+                <div style="width:460px" class="playerDown-left">
+                    <img src="https://h5static.kuwo.cn/upload/image/bcb35d33836add51d788988248504c4571a978cac13ce097c2e1b20f1fd01414.png"
+                        alt="">
+                    <div>
+                        <div>
+                            <span>
+                                <a href="">好音质，用酷我</a>&nbsp;&nbsp;-
+                                <b>dfwe</b>
+                            </span>
+                            <a>00:00/00:00</a>
+                        </div>
+                        <div class="line">
+                            <div id="slideTest2"></div>
+                            <audio controls autoplay src="https://cg-sycdn.kuwo.cn/89e71758093a546facc375703d46ebd3/614a833f/resource/n1/97/69/2699954364.mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+                <div style="width:164px" class="playerDown-mid">
+                    <div class="last" style="width:20px;height:20px;margin-top:8px;">
+
+                    </div>
+                    <div class="play" style="width:35px;height:35px;">
+
+                    </div>
+                    <div class="next" style="width:20px;height:20px;margin-top:8px;">
+
+                    </div>
+                </div>
+                <div style="width:460px" class="playerDown-right">
+                    <div style="width:18px;height:18px;margin-top: 3px;">
+                        <img src="./imges/收 藏-产品详情.png" alt="">
+                    </div>
+                    <div style="width:18px;height:18px;margin-top: 3px;" class="download">
+                        <img src="./imges/下载音乐.png" alt="">
+                    </div>
+                    <div style="width:18px;height:18px;margin-top: 3px;">
+                        <img src="./imges/评论.png" alt="">
+                    </div>
+                    <div style="width:18px;height:18px;margin-top: 3px;">
+                        <img src="./imges/循环播放.png" alt="">
+                    </div>
+                    <div style="width:18px;height:18px;margin-top: 3px;">
+                        <img src="./imges/音乐.png" alt="">
+                    </div>
+                    <div style="width:58px;height:24px" class="musicValue">
+                        <a href="">高品</a>
+                        <img src="./imges/下三角.png" alt="">
+                    </div>
+                    <div style="width:120px;height:24px" class="yinliang">
+                        <img src="./imges/音量.png" alt="">
+                        <div id="slideTest1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/public.js"></script>
+    <script>
+        layui.use('carousel', function () {
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1'
+                , width: '100%' //设置容器宽度
+                , arrow: 'hover' //始终显示箭头
+                //,anim: 'updown' //切换动画方式
+
+            });
+        });
+
+        layui.use('slider', function () {
+            var slider = layui.slider;
+
+            //渲染
+            slider.render({
+                elem: '#slideTest1'  //绑定元素
+                ,type: "default"
+                ,min : "0"
+                ,max : "83"
+                ,theme: "#ffdf1f"
+            });
+        });
+
+        layui.use('slider', function () {
+            var slider = layui.slider;
+
+            //渲染
+            slider.render({
+                elem: '#slideTest2'  //绑定元素
+                ,type: "default"
+                ,min : "0"
+                ,max : "370"
+                ,theme: "#ffdf1f"
+            });
+        });
+    </script>
+</body>
+
+</html>

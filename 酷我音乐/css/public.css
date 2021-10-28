@@ -1,0 +1,1322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+}
+.header{
+    width: 100%;
+    height: 68px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.headerNav{
+    width: 1288px;
+    height: 67px;
+    /* background: #000; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.headerNav-left{
+    width: 839px;
+    height: 67px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+}
+.headerNav-right{
+    width: 393px;
+    height: 67px;
+    /* background-color: lightblue; */
+}
+.NavUL{
+    width: 680px;
+    background-color: #fff;
+}
+.NavUL li{
+    margin-right: 4px;
+    /* background-color: lightyellow; */
+    padding: 0 14px;
+    font-weight: 300;
+}
+.NavUL li:hover a{
+    text-shadow:rgb(120, 118, 118) 0px 0px 1px; 
+}
+.headerNav-left a{
+    line-height: 67px; 
+    font-weight: 300;  
+    font-size: 16px;
+    color: #000; 
+}
+.headerNav-left a img{
+    width: 131px;
+    height: 39px;
+    vertical-align: middle;
+}
+
+.sanjiao span{
+    width: 16px;
+    height: 10px;
+    display: inline-block;
+    background-image: url(/酷我音乐/imges/arrow.png);
+    /* background-image: url(./images/arrow.png); */
+    background-size: 16px ;
+    /* background-position: 0 10px; */
+}
+.navtxt{
+    position: relative;
+}
+.sanjiaoTxt{
+    z-index: 100;
+    width: 170px;
+    height: 204px;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 50px;
+    left: -45px;
+    border: 1px solid rgb(243, 238, 238);
+}
+.sanjiaoTxt li{
+    width: 100%;
+    height: 51px;
+    /* background-color: pink; */
+    align-items: center;
+}
+/* .sanjiaoTxt li:nth-of-type(1){
+    background-color: #fff !important;
+} */
+.sanjiaoTxt li a{
+    line-height: 51px;
+    margin-left: 10px;
+}
+.sanjiaoTxt li:hover{
+    background-color: #FFDF1F;    
+}
+.navtxt:hover .sanjiao span{
+    background-position: 0 10px;
+
+}
+.navtxt:hover  .sanjiaoTxt{
+    display: block;
+}
+.sanjiaoTxt li:hover{
+    display: block;
+}
+.NavUL>li:nth-of-type(1){
+    background-color: #FFDF1F;
+    
+}
+.NavUL>li:nth-of-type(1) a{
+    font-weight: 900;
+}
+
+/* 导航栏右侧 */
+.headerNav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* line-height: 34px; */
+    z-index: 500;
+}
+.searchNav{
+    width: 294px;
+    height: 34px;
+    background-color: #F5F5F5;
+    /* padding-left: 8px; */
+    /* position: relative; */
+}
+.searchNav input{
+    display: inline-block;
+    height: 34px;
+    flex: 1;
+    line-height: 34px;
+    border: none;
+    margin-right: 24px;
+    padding-left: 10px;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+}
+.searchNav i{
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;vertical-align: middle;
+    display: inline-block;
+    background-image: url(/酷我音乐/imges/search.png);
+}
+.userService a{
+    font-size: 14px;
+}
+.searchTxt{
+    width: 100%;
+    height: 441px;
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid rgb(243, 238, 238);
+    z-index: 500;
+}
+
+.searchTxt p{
+    margin: 20px 7px 7px 20px;
+    /* width: 100%; */
+    margin-left: 20px;
+    /* background-color: lightblue; */
+    font-weight: 600;
+}  
+.searchTxt ul{
+    width: 100%;
+    display: block;
+}
+.searchTxt ul li{
+    width: 100%;
+    padding: 9px 20px;
+}
+.searchTxt ul li a{
+    margin-left: 5px;
+    color: #8e8e8e;
+}
+.searchTxt ul li:hover{
+    background-color: #f5f5f5;
+}
+
+
+/* 轮播图 */
+.banner{
+    width: 1288px;
+    margin: 0 auto;
+    /* background-color: pink; */
+    position: relative;
+}
+.bannerTitle{
+    height: 54px;
+    width: 100%;
+    padding-left: 206px;
+    z-index: 100;
+}
+.bannerTitle a{
+    line-height: 54px;
+    font-size: 14px;
+}
+.bannerTitle li{
+    position: relative;
+    margin-right: 34px;
+}
+.bannerTitle span{
+    display: none;
+    width: 100%;
+    height: 7px;
+    background-color: #ffe443;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: -5;
+}
+.bannerTitle li:nth-of-type(1) span{
+    display: block;
+}
+.bannerTitle li:nth-of-type(1) a{
+    font-weight: 600;
+}
+
+.bannerContent,.layui-carousel{
+    width: 1288px !important;
+    height: 373px !important;
+    z-index: 2;
+}
+.bannerImg{
+    width: 100%;
+    height: 100%;
+}
+.bannerFooter{
+    width: 100%;
+    height: 60px !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.15);
+    padding: 0 170px;
+    overflow: hidden;
+    z-index: 100;
+}
+.bannerFooter div {
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 180%;
+        height: 180%;
+        overflow: hidden;
+        border-radius: 10px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        backdrop-filter: blur(7px);
+        justify-content: center;
+        z-index: -3;
+}
+
+.bannerFooter a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.bannerFooter ul{
+    height: 100%;
+    line-height: 60px;
+    justify-content: space-between;
+    z-index: -1;
+}
+.bannerFooter ul li:hover a{
+    color: #fff;
+}
+.bannerFooter i{
+    width: 1px;
+    height: 28px;
+    background-color: #fff;
+    margin-top: 16px;
+}
+.layui-carousel-arrow{
+  
+    width: 60px !important;
+    height: 60px !important;
+    display: none;
+    margin-top: -80px !important;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 35px !important;
+    /* background-color: red !important; */
+    position: relative;
+}
+.layui-carousel-ind ul{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent  !important;
+}
+
+.content{
+    width: 1288px;
+    margin: 0 auto;
+    /* margin-top: 70px; */
+    margin-bottom: 70px;
+}
+.tuijianTitle{
+    display: flex;
+    margin-bottom: 20px;
+}
+.content h2{
+    /* line-height: 54px; */
+    font-weight: 900;
+    font-size: 30px;
+}
+.tuijianTitle-right{
+    padding-left:20px;
+}
+.tuijianContent{
+    width: 100%;
+}
+.tuijianContent ul{
+    justify-content: space-between;
+}
+.tuijianContent ul li{
+    width: 243px;
+    height: 328px;
+    /* background-color: pink; */
+}
+.tuijianContent div{
+    overflow: hidden;
+    width: 100%;
+    height: 243px;
+   position: relative;
+}
+.tuijianContent div:hover span{
+    display: block;
+}
+/* 播放按钮 */
+.tuijianDiv span{
+    position: absolute;
+    display: inline-block;
+    width:  60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    background-image: url(/酷我音乐/imges/playerBig.png);
+    background-repeat: no-repeat;
+    background-position:  15px ;
+    background-size: 30px;
+
+    display: none;
+}
+
+
+.tuijianImg{
+    width: 100%;
+    height: 243px;
+    transition: all .5s;
+}
+.tuijianP{
+    width: 100%;
+    /* height: 44px; */
+    /* background-color: pink; */
+    margin-top: 16px;
+    margin-bottom: 10px;
+    
+    
+}
+.tuijianP span{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tuijianNum{
+    width: 100%;
+    height: 15px;
+    /* margin-top: 15px; */
+    color: #999;
+    font-size: 14px;
+    /* background-color: lightblue; */
+    line-height: 1;
+    /* position: static; */
+}
+.tuijianNum i{
+    display: inline-block;
+    /* padding: 1px; */
+    width: 15px;
+    height: 15px;
+    background-image: url(/酷我音乐/imges/playerSmall.png);
+    margin-right: 2px;
+    vertical-align: middle;
+    background-size: 15px;
+}
+.tuijianNum span{
+    line-height: 15px;vertical-align: middle;
+}
+
+
+/* 精选活动 */
+.jingxuan{
+    /* background-color: pink; */
+}
+.jingxaunTitle{
+    margin-bottom: 30px;
+}
+.jingxaunContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.jingxaunContent img{
+    width: 634px;
+    height: 208px;
+    background-color: #fff;
+}
+
+
+/* 排行榜 */
+.paihangTitle{
+    display: flex;
+    margin-bottom: 20px;
+}
+.paihangTitle a{
+    font-size: 13px;
+    color: #999;
+    margin-left: 40px;
+    line-height: 54px;
+}
+.paihangContent{
+    width: 100%;
+    /* background-color: pink; */
+}
+.paihangContent ul{
+    height: 510px;
+    justify-content: space-between;
+}
+.paihangContent>ul>li{
+    width: 243px;
+    /* background-color: lightblue; */
+    box-shadow: 0 0 30px 0 rgb(65 67 70 / 8%);
+}
+.paihangContent div{
+    width: 100%;
+    height: 134px;
+    overflow: hidden;
+    /* background-color: lightyellow; */
+    text-align: center;
+    line-height: 134px;
+    background-size: 243px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    z-index: 10;
+    position: relative;
+}
+.paihangContent div img{
+    width: 132px;
+    height: 70px;
+    /* background-color: #fff;     */
+    z-index: 10;
+}
+.cover{
+    width: 243px;
+    height: 134px;
+    background-color: rgba(46,32,60,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.paihangContent i{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 100;
+    right: 13px;
+    bottom: 13px;
+    background-image: url(/酷我音乐/imges/playerBig.png);
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    display: none;
+}
+.paihangContent div:hover i{
+    display: block;
+}
+
+.paihangContent li ul{
+    width: 100%;
+    height: 376px;
+    /* background-color: lightyellow; */
+    padding: 28px 20px 26px;
+    display: block;
+}
+.paihangContent li ul li{
+    height: 46px;
+    /* width: 203px; */
+    /* background-color: #fff; */
+    margin-bottom: 23px;
+    display: flex;
+}
+/* .paihangList{
+    display: flex;
+} */
+.paihangList img{
+    width: 40px;
+    /* height: 33px; */
+    vertical-align: top;
+    margin-right: 10px;
+}
+.paihangList span{
+    /* background-color: #fff; */
+    display: block;
+    height: 40px;
+    width: 152px;
+    /* overflow: hidden;
+    flex-wrap: nowrap;
+    text-overflow: ellipsis; */
+}
+.paihangList b{
+    width: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+.paihangList p{
+    width: 152px;
+    height: 20px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 1px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+.paihangList a{
+    display: block;
+    width: 152px;
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    font-weight: 300;
+}
+.paihangList p:hover{
+    cursor: pointer;
+}
+
+
+
+/* 歌手推荐 */
+.geshouTitle{
+    display: flex;
+}
+.geshouContent{
+    width: 100%;
+    height: 225px;
+    margin-top: 10px;
+    /* background-color: pink; */
+}
+.geshouContent ul{
+    justify-content: space-between;
+    height: 100%;
+}
+.geshouContent li{
+    width: 168px;
+    height: 100%;
+    /* background-color: lightblue; */
+}
+.geshouContent li img{
+    width: 168px;
+    height: 168px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.geshouContent li p{
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 17px;
+}
+.geshouContent li p:hover{
+    cursor: pointer;
+}
+.geshouContent li a{
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 6px;
+}
+
+
+
+/* 主播电台 */
+.zhuboTitle{
+    display: flex;
+    line-height: 43px !important;
+    margin-bottom: 28px;
+}
+.zhuboTitle h2{
+    margin-right: 35px;
+}
+.zhuboTitle span{
+    /* display: inline-block; */
+    font-size: 14px;
+    color: #333;
+    background-color: #FFDF1F;
+    padding: 0 10px; 
+    height: 30px;   
+    border-radius: 30px;
+    line-height: 30px;
+    margin-top: 6px; 
+    
+    /* align-items: center;  */
+    vertical-align: middle;
+}
+.zhuboTitle span a{
+    border-right: 1px solid rgba(0,0,0,.05);
+    /* margin-right: 0px; */
+    /* height: 14px; */
+    /* line-height: 30px; */
+    padding-right: 9px;
+    /* vertical-align: middle; */
+    /* margin-top: 5px; */
+    /* align-items: center; */
+    /* background-color: #fff; */
+}
+.zhuboTitle span img{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-top:  1px;
+}
+.zhuboContent{
+    width: 100%;
+    height: 320px;
+    /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.zhuboContent>div{
+    width: 416px;
+    height: 83px;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+   
+}
+.zhubo-left{
+    width: 83px;
+    height: 83px;
+    /* background-color: lightyellow;  */
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: 83px 83px;
+    z-index: 1;
+    position: relative;
+}
+.zhubo-right{
+    height: 83px;
+    width: 315px;
+    /* background-color: #fff; */
+}
+.zhuboCover{
+    width: 83px;
+    height: 83px;
+    display: none;
+    transition: all .5s;
+    background-color: rgba(46,32,60,.3);
+    z-index: 3;
+}
+.zhubo-left:hover .zhuboCover,
+.zhubo-left:hover .zhuboPlayer{
+    display: block;
+}
+.zhubo-right{
+    /* align-items: center; */
+    border-bottom: 1px solid rgba(0,0,0,.04);
+}
+.zhubo-right p{
+    /* background-color: lightyellow; */
+    height: 22px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
+.zhubo-right p:hover{
+    font-weight: 600;
+}
+.zhubo-right a{
+    color: #999;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    /* background-color: pink; */
+}
+.zhubo-right a:hover{
+    color: #000;
+}
+.zhuboPlayer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    z-index: 11111;
+    display: none;
+    transform: translate(-50% ,-50%);
+}
+.zhuboPlayer img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+/* 底部 */
+.footer{
+    width: 1528px;
+    /* height: 502px; */
+    /* background-color: pink; */
+    /* margin-bottom: 0; */
+    margin: 0 auto;
+}
+.footerUp{
+    width: 1528px;
+    height: 220px;
+    /* background-color: lightblue; */
+    background: #282828;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+.footerDown{
+    width: 1528px;
+    height: 182px;
+    background-color: #1F1F1F;
+}
+.footerDown-content{
+    width: 1288px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: pink; */
+    padding-top: 22px;
+}
+.footerUp-content{
+    width: 1288px;
+    /* height: 190px; */
+    margin: 0 auto;
+    /* background-color: lightblue; */
+    display: flex;
+}
+.footerUp-content>div{
+    width: 30%;
+}
+.footerUp-content>div:nth-of-type(4){
+    width: 10%;
+    /* background-color: lightyellow; */
+}
+.footerUp-content p{
+    /* background-color: purple; */
+    margin-top: 49px;
+    margin-bottom: 45px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+.footerUp-content ul{
+    /* background-color: #fff; */
+    width: 100%;
+    height: 88px;
+    margin-top: 7px;
+    flex-wrap: wrap;
+}
+.footerUp-content div:nth-of-type(2) a{
+    margin-right: 50px;
+}
+.footerUp-content div:nth-of-type(3) a{
+    margin-right: 50px !important;
+}
+.footerUp-content ul a{
+    margin-right: 40px;
+    white-space: nowrap;
+    height: 18px;
+    font-size: 13px;
+    line-height: 18px;
+    color: grey;
+}
+.footerUp-content ul a:hover{
+    color: #FFE12C;
+}
+.footerUp-content div:nth-of-type(1) ul li:hover a{
+    color: #FFE12C;
+}
+.footerUp-content ul li:hover .yellow{
+    display: block;
+}
+.footerUp-content ul li:hover .gray{
+    display: none;
+}
+.footerUp-content ul img{
+    width: 30px;
+    height: 30px;
+}
+.footerUp-content ul li:nth-of-type(2) img{
+    margin-left: 8px;
+}
+.footerUp-content ul li:nth-of-type(3) img{
+    margin-left: 12px;
+}
+.gray{
+    display: block;
+}
+.yellow{
+    display: none;
+}
+
+/* 底部下半部分 */
+.footerDown-content p,
+.footerDown-content a{
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    color: grey;
+}
+.footerDown-content p{
+    width: 100%;
+}
+.footerDown-content a:hover{
+    color: #ffe12c;
+}
+
+
+/* 右侧导航栏 */
+.rightFixed{
+    width: 52px;
+    height: 300px;
+    /* background-color: pink; */
+    position: fixed;
+    display: flex;
+    bottom: 120px;
+    right: 46px;
+    display: none;
+    /* opacity: 1; */
+}
+.rightFixed ul{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.rightFixed ul li{
+    width: 52px;
+    height: 52px;
+    background-color: #f5f5f5;
+    margin-bottom: 8px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    /* position: relative; */
+    /* align-items: center; */
+    /* box-sizing: border-box; */
+}
+.rightFixed a{
+    line-height: 32px !important;
+    font-weight: 600;
+    font-size: 18px;
+    color: #666;
+    vertical-align: middle;
+
+}
+.rightFixed a:hover{
+    color: #333;
+}
+.rightFixed img{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.fixedDown{
+    display: block;    
+}
+.fixedUp{
+    display: none;
+}
+.rightFixed ul li:hover .fixedUp{
+    display: block;
+}
+.rightFixed ul li:hover .fixedDown{
+    display: none;
+}
+
+
+
+/* 弹出部分 */
+.all{
+    /* width: 100%;
+    height: 100%; */
+    background-color: rgba(0,0,0,.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11111111;
+    display: none;
+}
+.fankui{
+    width: 510px;
+    height:369px;
+    position: fixed;
+   top: 50%;
+   left: 50%;
+   display: none;
+   transform: translate(-50%, -50%);
+    z-index: 11111111111111111;
+    /* top: 0;
+    /* bottom: 0;
+    left: 0; */
+    /* bottom: 0;  */
+    margin: auto;
+    padding: 16px 20px 20px;
+    background: #fff;
+    box-shadow: 0 4px 20px 0 rgb(65 67 70 / 8%);
+    padding: 16px 20px 20px;
+}
+.fankui>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+} 
+.fankui>div:nth-of-type(1) a{
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.fankui>div:nth-of-type(1) img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.fankui>div:nth-of-type(2),
+.fankui>div:nth-of-type(3){
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.fankui>div:nth-of-type(2)>div:nth-of-type(1),
+.fankui>div:nth-of-type(3)>div:nth-of-type(1){
+    color: #000;
+    margin-top: 12px;
+}
+.fankui>div:nth-of-type(3)>div:nth-of-type(2){
+    width: 400px;
+    height: 80px;
+    background-color: #f5f5f5;
+    padding: 9px 12px 27px;
+}
+.fankui>div:nth-of-type(3)>div:nth-of-type(2) textarea{
+    width: 376px;
+    background-color: #f5f5f5;
+    height: 43px;
+}
+.fankui>div:nth-of-type(2)>div:nth-of-type(2){
+    width: 400px;
+    height: 125px;
+    background-color: #f5f5f5;
+    padding: 9px 12px 27px;
+}
+textarea{
+    resize: none;
+    border: none;
+}
+#up{
+    width: 376px;
+    height: 88px;
+    
+    background-color: #f5f5f5;
+    font-size: 14px;
+    line-height: 21px;
+    background: #f5f5f5;
+    /* width: 100%; */
+}
+.fankui>div:nth-of-type(2)>div:nth-of-type(2) span{
+    /* background-color: lightyellow; */
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+.fankui>div:nth-of-type(4){
+    margin-top: 18px;
+    float: right;
+    width: 120px;
+    height: 40px;
+    line-height: 39px;
+    text-align: center;
+    background: #ffdf1f;
+    border-radius: 23px;
+    cursor: pointer;
+}
+.anzhuo,.apple{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 244px;
+    padding: 16px 20px;
+    background: #fff;
+    z-index: 100;
+    box-shadow: 0 4px 20px 0 rgb(65 67 70 / 8%);
+}
+/* .anzhuo div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+} */
+.anzhuo>div:nth-of-type(1),
+.apple>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+} 
+.anzhuo>div:nth-of-type(1) a,
+.apple>div:nth-of-type(1) a{
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.anzhuo>div:nth-of-type(1) img,
+.apple>div:nth-of-type(1) img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.anzhuo>div:nth-of-type(2),
+.apple>div:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.anzhuo>div:nth-of-type(2)>div:nth-of-type(1),
+.apple>div:nth-of-type(2)>div:nth-of-type(1){
+    width: 171px;
+    height: 40px;
+    line-height: 38px;
+    color: #333;
+    border-radius: 23px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    margin-left: 13px;
+    margin-bottom: 18px;
+    background-color: #FFDF1F;
+    margin-top: 50px;
+}
+.anzhuo>div:nth-of-type(2)>div:nth-of-type(2),
+.apple>div:nth-of-type(2)>div:nth-of-type(2){
+    width: 162px;
+    /* height: 140px; */
+    /* background-color: pink; */
+    border-left: 1px solid #f5f5f5;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+.anzhuo>div:nth-of-type(2)>div:nth-of-type(2) img,
+.apple>div:nth-of-type(2)>div:nth-of-type(2) img{
+    width: 110px;
+    height: 110px;
+
+}
+.anzhuo>div:nth-of-type(2)>div:nth-of-type(2) p,
+.apple>div:nth-of-type(2)>div:nth-of-type(2) p{
+    margin-top: 8px;
+    height: 20px;
+    margin-left: 7px;
+    /* text-align: center; */
+    font-weight: 400;
+    color: #666;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+/* 播放部分 */
+.player{
+    width: 100%;
+    height: 71px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+    position: fixed;
+    bottom: -70px;
+    z-index: 444444444444444444444444444444444;
+}
+.playerContent{
+    width: 1288px;
+    height: 71px;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+    position: relative;
+}
+.playerUp{
+    width: 80px;
+    height: 40px;
+    /* background-color: lightyellow; */
+    /* border-radius: 100px 100px 0 0; */
+    float: right;
+    position: absolute;
+    top: -37px;
+    right: 0;
+    background: url(https://h5static.kuwo.cn/www/kw-www/img/pic_lockbg.909d997.png) 0 -8px no-repeat;
+    /* background-image: url(https://h5static.kuwo.cn/www/kw-www/img/pic_lockbg.909d997.png); */
+}
+.playerUp img{
+    width: 20px;
+    height: 20px;
+    margin-left: 42px;
+    transform: translateX(-50%);
+    margin-top: 17px;
+    z-index: 99999999999999999999999999999999;
+}
+.suoGuan{
+    display: none;
+}
+/* .suoGuan:hover{
+
+} */
+/* .playerUp:hover .suoGuan{
+    display: none;
+}
+.playerUp:hover .suoKai{
+    display: block;
+} */
+.playerDown{
+    display: flex;
+    height: 71px;
+    justify-content: space-between;
+}
+.playerDown div{
+    /* background-color: lightyellow; */
+}
+.playerDown-left{
+    display: flex;
+    justify-content: space-between;
+}
+.playerDown-left img{
+    width: 70px;
+    height: 70px;
+}
+.playerDown-left>div{
+    width: 370px;
+    margin-top: 17px;
+    /* margin-bottom: 4px; */
+    /* background-color: purple; */
+    
+}
+.playerDown-left>div span a{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    color: #000;
+}
+.playerDown-left>div span b{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+}
+.playerDown-left>div>div>a{
+    font-size: 14px;
+    color: #999;
+}
+.playerDown-left>div>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* background-color: #fff; */
+}
+
+
+
+
+.playerDown-mid{
+    display: flex;
+    justify-content: space-between;
+    width: 164px;
+    height: 40px;
+    /* background-color: #fff; */
+    margin-top: 15px;
+}
+.last{
+    background-image: url(/酷我音乐/imges/上一首.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.next{
+    background-image: url(/酷我音乐/imges/下一首.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.play{
+    background-image: url(/酷我音乐/imges/播放\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 35px;
+}
+
+
+/* 播放的右侧部分 */
+.playerDown-right{
+    width: 460px;
+    height: 24px;
+    /* background-color: purple; */
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+.playerDown-right div{
+    /* background-color: #fff; */
+}
+.playerDown-right img{
+    width: 100%;
+    height: 100%;
+}
+.download img{
+    width: 40px;
+    height: 40px;
+    margin-top: -11px;
+    margin-left: -11px;
+}
+.musicValue{
+    border: 1px solid #666;
+    /* background-color: #666; */
+    border-radius: 13px;
+    /* text-align: center; */
+    vertical-align: middle;
+}
+.musicValue a{
+    vertical-align: middle;
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+}
+.musicValue img{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+.yinliang{
+    display: flex;
+    justify-content: space-between;
+}
+.yinliang img{
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    vertical-align: middle;
+}
+.volume{
+    width: 83px;
+    margin-top: 10px;
+}
+#slideTest1{
+    width: 83px;
+    margin-top: 10px;
+}
+#slideTest2{
+    width: 370px;
+}
+
+
+
+
+
+/* 滑块的提示不出现 */
+.layui-slider-tips{
+    display: none !important;
+}
